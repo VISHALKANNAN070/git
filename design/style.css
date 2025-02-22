@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --light_red: hsl(0, 100%, 67%);
+    --orangey_yellow: hsl(39, 100%, 56%);
+    --green_teal: hsl(166, 100%, 37%);
+    --cobalt_blue: hsl(234, 85%, 45%);
+    --light_slate_blue: hsl(252, 99%, 61%);
+    --light_royal_blue: hsl(241, 81%, 54%);
+    --violet_blue: hsla(256, 72%, 46%, 1);
+    --persian_blue: hsl(241, 72%, 46%);
+    --white: hsl(0, 0%, 100%);
+    --pale_blue: hsl(221, 100%, 96%);
+    --light_lavender: hsl(241, 100%, 89%);
+    --dark_gray_blue: hsl(224, 30%, 27%);
+}
+
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--pale_blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Hanken Grotesk", serif;
+}
+
+.container {
+    width: 600px;
+    height: 400px;
+    background-color: var(--white);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.left {
+    width: 300px;
+    padding: 20px;
+    height: auto;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--light_royal_blue);
+    color: var(--white);
+    background-image: linear-gradient(var(--light_slate_blue),var(--light_royal_blue));
+}
+
+.circle {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(var(--violet_blue),var(--persian_blue),var(--light_royal_blue));
+
+}
+.circle h6{
+    font-size: 1rem;
+}
+
+.circle h1 {
+    font-size: 3rem;
+}
+
+.left h5 {
+    font-size: 1.1rem;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.left h4 {
+    font-size: 1.4rem;
+    font-weight: 400;
+    padding-top: 30px;
+}
+
+.right {
+    padding: 30px;
+    display: flex;
+    height: auto;
+    width: 300px;
+    flex-direction: column;
+    
+}
+
+.tab {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    width: auto;
+    height: 50px;
+    border-radius: 14px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    padding: 15px;
+    font-weight: 500; 
+}
+.tab p{
+    color:var(--dark_gray_blue);
+    font-weight: 700;
+}
+.tab span{
+    color: var(--light_lavender);
+    font-weight: 700;
+}
+
+.right h5 {
+    padding-bottom: 20px;
+    font-size: 1.1rem;
+    padding-top: 10px;
+    
+}
+
+.button {
+    width: 100%;
+    display: flex;
+    height: 50px;
+    background-color: var(--dark_gray_blue);
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    /* margin: 20px 0px; */
+}
+.left p{
+    font-weight: 400;
+    padding: 20px;
+    text-align: center;
+}
+
+.name{
+    display: flex;
+    flex-direction: row;
+}
+.name h6{
+    padding-left: 10px;
+    font-size: 1rem;
+}
+
+@media (max-width : 620px){
+    body{
+        min-height: 100vh;
+    }
+    .container{
+        width: 300px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .left{
+        border-radius: 0px 0px 20px 20px;
+        height: 300px;
+        padding-top: 5px;
+    }
+    .left h4{
+        padding: 10px;
+    }
+    .left p{
+        padding: 0px;
+    }
+    .left h5{
+        padding-top: 0px;
+    }
+    .right{
+        padding-top: 0px;
+    }
+    .right h5{
+        padding-bottom: 10px;
+    }
+}
+
+.button:active{
+    background-image: linear-gradient(var(--light_slate_blue),var(--light_royal_blue));
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#reaction {
+    background-color: hsla(0, 100%, 67%, 10%);
+}
+
+#memory {
+    background-color: hsla(39, 100%, 56%, 10%);
+}
+
+#verbal {
+    background-color: hsla(166, 100%, 37%, 10%);
+}
+
+#visual {
+    background-color: hsla(252, 100%, 67%, 10%);
+}
+
+#reaction h6 {
+    color: var(--light_red);
+}
+
+#memory h6{
+    color: var(--orangey_yellow);
+}
+
+#visual h6{
+    color: var(--cobalt_blue);
+}
+
+#verbal h6{
+    color: var(--green_teal);
+}
